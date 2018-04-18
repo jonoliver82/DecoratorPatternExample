@@ -19,7 +19,7 @@ namespace DecoratorPatternExample
             // Create an instance of the decorator, providing it the instance to be decorated
             // Pass the normal instance to the cached decorator
             // Note we could pass another decorator if we choose to combine features
-            var cachedCalc = new CachedCalculator(loggingCalc);
+            var cachedCalc = new CachedCalculator(calc);
 
             // Create a client, inject it with the concrete or decorated instance of ICalculator as required
             // Note the client doesnt know or care which instance it has been given, and
